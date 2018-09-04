@@ -126,6 +126,15 @@ li{
   width: 89%;
 }
 
-#prodSolo .todoElProd .info button{
-  margin-top: 20px;
+#prodSolo .todoElProd .info .comprarbtn{
+  background-color: #f48473;
+  height: 30px;
+  width: 60px;
+  border-style: none;
+  margin-left: 10px;
+  padding: 5px;
+  margin-top: 30px;
+}
+#prodSolo .todoElProd .info .comprarbtn:hover{
+  cursor: pointer;
 }

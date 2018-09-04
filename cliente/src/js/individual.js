@@ -43,6 +43,7 @@ class Individual extends Component {
   render() {
       var item = this.state.data.item
       var categorias = this.state.data.categories
+     
 
 
 /*  function ActionLink() {
@@ -76,10 +77,8 @@ class Individual extends Component {
         <div>
           {item && <div className="todoElProd">
 
-
-          
-            
-              <img className="foto" src={item.picture} alt="Imagen del producto"/>
+                    
+            <img className="foto" src={item.picture} alt="Imagen del producto"/>
             
             <div className="info">
               <h5>{item.condition} - {item.sold_quantity} vendidos </h5>
@@ -91,7 +90,7 @@ class Individual extends Component {
                 {item.price.decimals!=="00" && <span className="decimales">,{item.price.decimals}</span>}
               </h1>
               {item.free_shipping && <h6>Envío gratis <img src={shipping} alt="Envío gratis"/></h6>}
-              <button /*onClick={handleClick}*/><a href={item.permalink}> Comprar {item.permalink}</a></button>
+              <a className="comprarbtn" target="_blank" href={link}>Comprar</a>
             </div>
           
             <div className="descripcion">
